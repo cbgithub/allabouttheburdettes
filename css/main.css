@@ -16,33 +16,7 @@
     transform: rotate(5deg);
 }
 
-@media screen and (max-width: 1160px){
-  #Story .image {
-    width: 100%;
-    height: 56.25vw;
-}
 
-#Story .image .im {
-  width: 50%;
-  height: 100%;
-}
-}
-
-
-#Story .image {
-  display: block;
-  width: 100%;
-  height: 63.3rem;
-  position: relative;
-  z-index: 1;
-  background-color: #fff;
-}
-#Story .image .im {
-  width: 50%;
-  height: 100%;
-  position: relative;
-  float: left;
-}
 
 .rotate_image_left {
   -webkit-transform: rotate(-5deg);
