@@ -299,7 +299,7 @@
 }
 
 @media(max-width: 630px){
-  .card:first-child{
+  #card:first-child{
       margin-left: 45px;
   } 
 }
