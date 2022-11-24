@@ -131,15 +131,13 @@
                         LODGING</h5>
                       <p>
                         We have a hotel room block at <b>Hampton Inn Gainesville-Haymarket</b> and <b>Hilton Garden Inn
-                          Haymarket</b>. Please reserve a room from our custom
-                        hotel page before prices eventually increase. You can cancel at anytime before 48 hr prior to
-                        your arrival.
+                         Manassas</b>. Please reserve a room from our custom
+                        hotel page before prices eventually increase. <b style="color:red">You can cancel at anytime before Monday, March 13, 2023.</b>
                       </p>
 
-                      <p style="text-align: center;"><a
-                          href="https://www.hilton.com/en/book/reservation/deeplink/?ctyhocn=WASGVHX&groupCode=CHHBUR&arrivaldate=2023-04-27&departuredate=2023-05-01&cid=OM,WW,HILTONLINK,EN,DirectLink&fromId=HILTONLINKDIRECT">Reserve
-                          Room - Hampton Inn</a></p>
-                      <p style="text-align: center;">Reserve Room - Hilton Garden (COMING SOON)</p>
+                      <p style="text-align: center;"><a href="https://www.hilton.com/en/book/reservation/deeplink/?ctyhocn=MNZMNGI&groupCode=BUR&arrivaldate=2023-04-28&departuredate=2023-04-30&cid=OM,WW,HILTONLINK,EN,DirectLink&fromId=HILTONLINKDIRECT">Reserve Room - Hilton Garden</a></p>
+                      <p style="text-align: center;"><a href="https://www.hilton.com/en/book/reservation/deeplink/?ctyhocn=WASGVHX&groupCode=CHHBUR&arrivaldate=2023-04-27&departuredate=2023-05-01&cid=OM,WW,HILTONLINK,EN,DirectLink&fromId=HILTONLINKDIRECT">Reserve Room - Hampton Inn</a></p>
+
 
 
                       <h4 style="text-align: center;">Ceremony will seat at 4:30 pm.</h4>
@@ -343,7 +341,7 @@
             <br>
 
 <!--
-   <div id="RSVP">
+  <div id="RSVP">
               <div class="container py-5">
 
                 <div class="row">
@@ -375,7 +373,7 @@
 
                       <div>
                         <button class="btn btn-primary me-2" type="submit">Send</button>
-                        <button class="btn btn-danger" type="reset">Reset the form</button>
+                        <button class="btn btn-danger" onclick="clearAlert()" type="reset">Reset the form</button>
                       </div>
                     </form>
                   </div>
@@ -383,7 +381,9 @@
               </div>
             </div>
 -->
-           
+            
+
+
             <br>
             <br>
             <br>
@@ -450,31 +450,36 @@
 
 
 <script>
-  /*
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxqXbh5z7eF_1iUvXODW0SEpuP2cfIZJ9WDcxbjB4d6H15zcnWfuxpJUASXDmJG-dCL/exec'
+/*
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxqXbh5z7eF_1iUvXODW0SEpuP2cfIZJ9WDcxbjB4d6H15zcnWfuxpJUASXDmJG-dCL/exec'
 
-const form = document.forms['google-sheet']
+  const form = document.forms['google-sheet']
 
-form.addEventListener('submit', e => {
-  e.preventDefault()
-  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-    .then(response => response.json().then(data => {
-      if (data.result == "error") {
-        $("#form_alerts").html("<div class='alert alert-danger'>Bad Code.</div>")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => response.json().then(data => {
+        if (data.result == "error") {
+          $("#form_alerts").html("<div class='alert alert-danger'>Error - Bad Code.</div>")
+        }
+        else if (data.result == 'info') {
+          $("#form_alerts").html("<div class='alert alert-primary'>It Looks like you've already RSVP'd. Check your emails spam folder.</div>")
+        }
+        else {
+          $("#form_alerts").html("<div class='alert alert-success'>Thanks for RSVP-ing! Please check your email (spam).</div>")
+        }
+
       }
-      else{
-        $("#form_alerts").html("<div class='alert alert-success'>Contact message sent successfully.</div>")
-      }
 
-    }
+      ))
+      .catch(error => $("#form_alerts").html("<div class='alert alert-danger'>Error occurred.</div>"))
+  })
 
-    ))
-
-    //.then(response => $("#form_alerts").html("<div class='alert alert-success'>Contact message sent successfully.</div>"))
-    .catch(error => $("#form_alerts").html("<div class='alert alert-danger'>Contact message not sent.</div>"))
-})
-  
+  function clearAlert(){
+    $("#form_alerts").html("");
+  }
 */
+
 
 
   var myNav = document.getElementById("nav");
