@@ -297,3 +297,39 @@
 .carousel-inner .carousel-item-left{ 
 transform: translateX(0);
 }
+
+
+.wrapper { 
+ 
+  overflow:hidden;
+}
+
+.wrapper div {
+   min-height: 200px;
+   padding: 10px;
+}
+#one {
+
+  float:left; 
+  margin-right:10px;
+  width:45vw;
+  height:450px;
+
+}
+#two { 
+ 
+  overflow:hidden;
+  margin:3px;
+
+  min-height:170px;
+}
+
+@media screen and (max-width: 400px) {
+   #one { 
+    float: none;
+    margin-right:0;
+    width:auto;
+    border:0;
+
+  }
+}
