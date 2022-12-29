@@ -407,7 +407,10 @@
 
                     <div class="row">
                       <div class="col-lg-5 col-md-8 mx-auto shadow border bg-white p-4 rounded">
-                        <h2 class="text-center fw-bold mb-3">Find My Invitation</h2>
+                        <h2
+                        style="text-align: center; font-family: brandon-grotesque,'Brandon Grotesque',Futura,sans-serif; color:black; ">
+                        Find My Invitation</h2>
+                      <span class="underline"></span>
                         <form name="find-my-invitation" id="find-my-invitation">
                           <div id="invite_form_alerts"></div>
                           <div class="form-group mb-3">
@@ -435,7 +438,11 @@
 
                     <div class="row">
                       <div class="col-lg-5 col-md-8 mx-auto shadow border bg-white p-4 rounded">
-                        <h2 class="text-center fw-bold mb-3">RSVP</h2>
+                        <h2
+                        style="text-align: center; font-family: brandon-grotesque,'Brandon Grotesque',Futura,sans-serif; color:black; ">
+                        RSVP</h2>
+                        <span class="underline"></span>
+                        <br>
                         <form name="rsvp-sheet" id="rsvp-sheet">
                           <div id="form_alerts"></div>
                           <div class="form-group mb-3" style="display: none;">
@@ -468,15 +475,15 @@
                               <label for="radio" class="form-label"><b>I plan on eating..</b></label><br>
                               <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="invitee_meal_selection"
-                                  id="chickenoption" value="Lemon Chicken" required>
+                                  id="chickenoption" value="Meyer Lemon Chicken Piccata" required>
                                 <label class="form-check-label" for="chickenoption">
-                                  Lemon Chicken
+                                  Meyer Lemon Chicken Piccata
                                 </label>
                               </div>
                               <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="invitee_meal_selection"
-                                  id="salmonoption" value="Atlantic Salmon" required>
-                                <label class="form-check-label" for="salmonoption">Atlantic Salmon</label>
+                                  id="salmonoption" value="Pan Seared Atlantic Salmon" required>
+                                <label class="form-check-label" for="salmonoption">Pan Seared Atlantic Salmon</label>
                               </div>
                               <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="invitee_meal_selection"
@@ -888,14 +895,14 @@
                   meal1formcheckinput.setAttribute("type", "radio");
                   meal1formcheckinput.setAttribute("name", "guest" + i + "mealSelection")
                   meal1formcheckinput.setAttribute("id", "guest" + i + "chickenoption");
-                  meal1formcheckinput.setAttribute("value", "Lemon Chicken");
+                  meal1formcheckinput.setAttribute("value", "Meyer Lemon Chicken Piccata");
                   meal1formcheckinput.required = true;
 
 
                   var meal1formchecklabel = document.createElement("label");
                   meal1formchecklabel.setAttribute("class", "form-check-label");
                   meal1formchecklabel.setAttribute("for", "guest" + i + "chickenoption");
-                  meal1formchecklabel.innerHTML = "Lemon Chicken";
+                  meal1formchecklabel.innerHTML = "Meyer Lemon Chicken Piccata";
 
                   var meal2formcheck = document.createElement('div');
                   meal2formcheck.setAttribute("class", "form-check form-check-inline");
@@ -905,13 +912,13 @@
                   meal2formcheckinput.setAttribute("type", "radio");
                   meal2formcheckinput.setAttribute("name", "guest" + i + "mealSelection")
                   meal2formcheckinput.setAttribute("id", "guest" + i + "salmonoption");
-                  meal2formcheckinput.setAttribute("value", "Atlantic Salmon");
+                  meal2formcheckinput.setAttribute("value", "Pan Seared Atlantic Salmon");
                   meal2formcheckinput.required = true;
 
                   var meal2formchecklabel = document.createElement("label");
                   meal2formchecklabel.setAttribute("class", "form-check-label");
                   meal2formchecklabel.setAttribute("for", "guest" + i + "salmonoption");
-                  meal2formchecklabel.innerHTML = "Atlantic Salmon";
+                  meal2formchecklabel.innerHTML = "Pan Seared Atlantic Salmon";
 
                   var meal3formcheck = document.createElement('div');
                   meal3formcheck.setAttribute("class", "form-check form-check-inline");
