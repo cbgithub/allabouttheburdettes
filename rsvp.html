@@ -695,38 +695,38 @@
       $('#salmonoption').removeAttr('required');
       $('#crabcakeoption').removeAttr('required');
       $('#portobellooption').removeAttr('required');
-      /*
-            $('#guest1chickenoption').removeAttr('required');
-            $('#guest1salmonoption').removeAttr('required');;
-            $('#guest1crabcakeoption').removeAttr('required');
-            $('#guest1Portobellooption').removeAttr('required');
-            $('#guest1kidsoption').removeAttr('required');
-      
-      
-            $('#guest2salmonoption').removeAttr('required');
-            $('#guest2crabcakeoption').removeAttr('required');
-            $('#guest2Portobellooption').removeAttr('required');
-            $('#guest2chickenoption').removeAttr('required');
-            $('#guest2kidsoption').removeAttr('required');
-      
-            $('#guest3chickenoption').removeAttr('required');
-            $('#guest3salmonoption').removeAttr('required');
-            $('#guest3crabcakeoption').removeAttr('required');
-            $('#guest3Portobellooption').removeAttr('required');
-            $('#guest3kidsoption').removeAttr('required');
-      
-            $('#guest4chickenoption').removeAttr('required');
-            $('#guest4salmonoption').removeAttr('required');
-            $('#guest4crabcakeoption').removeAttr('required');
-            $('#guest4portobellooption').removeAttr('required');
-            $('#guest4kidsoption').removeAttr('required');
-      
-            $('#guest5chickenoption').removeAttr('required');
-            $('#guest5salmonoption').removeAttr('required');
-            $('#guest5crabcakeoption').removeAttr('required');
-            $('#guest5Portobellooption').removeAttr('required');
-            $('#guest5kidsoption').removeAttr('required');
-            */
+
+      $('#guest1chickenoption').removeAttr('required');
+      $('#guest1salmonoption').removeAttr('required');;
+      $('#guest1crabcakeoption').removeAttr('required');
+      $('#guest1Portobellooption').removeAttr('required');
+      $('#guest1kidsoption').removeAttr('required');
+
+
+      $('#guest2salmonoption').removeAttr('required');
+      $('#guest2crabcakeoption').removeAttr('required');
+      $('#guest2Portobellooption').removeAttr('required');
+      $('#guest2chickenoption').removeAttr('required');
+      $('#guest2kidsoption').removeAttr('required');
+
+      $('#guest3chickenoption').removeAttr('required');
+      $('#guest3salmonoption').removeAttr('required');
+      $('#guest3crabcakeoption').removeAttr('required');
+      $('#guest3Portobellooption').removeAttr('required');
+      $('#guest3kidsoption').removeAttr('required');
+
+      $('#guest4chickenoption').removeAttr('required');
+      $('#guest4salmonoption').removeAttr('required');
+      $('#guest4crabcakeoption').removeAttr('required');
+      $('#guest4portobellooption').removeAttr('required');
+      $('#guest4kidsoption').removeAttr('required');
+
+      $('#guest5chickenoption').removeAttr('required');
+      $('#guest5salmonoption').removeAttr('required');
+      $('#guest5crabcakeoption').removeAttr('required');
+      $('#guest5Portobellooption').removeAttr('required');
+      $('#guest5kidsoption').removeAttr('required');
+
     }
   });
 
@@ -864,6 +864,7 @@
                   input.setAttribute("name", "guest" + i + "name");
                   input.setAttribute("class", "form-control");
                   input.setAttribute("placeholder", "Enter first and Last name..");
+                  input.required = true;
 
 
 
@@ -888,7 +889,8 @@
                   meal1formcheckinput.setAttribute("name", "guest" + i + "mealSelection")
                   meal1formcheckinput.setAttribute("id", "guest" + i + "chickenoption");
                   meal1formcheckinput.setAttribute("value", "Lemon Chicken");
-                 
+                  meal1formcheckinput.required = true;
+
 
                   var meal1formchecklabel = document.createElement("label");
                   meal1formchecklabel.setAttribute("class", "form-check-label");
@@ -904,7 +906,7 @@
                   meal2formcheckinput.setAttribute("name", "guest" + i + "mealSelection")
                   meal2formcheckinput.setAttribute("id", "guest" + i + "salmonoption");
                   meal2formcheckinput.setAttribute("value", "Atlantic Salmon");
-                 
+                  meal2formcheckinput.required = true;
 
                   var meal2formchecklabel = document.createElement("label");
                   meal2formchecklabel.setAttribute("class", "form-check-label");
@@ -920,7 +922,8 @@
                   meal3formcheckinput.setAttribute("name", "guest" + i + "mealSelection")
                   meal3formcheckinput.setAttribute("id", "guest" + i + "crabcakeoption");
                   meal3formcheckinput.setAttribute("value", "Maryland Crab Cake");
-               
+                  meal3formcheckinput.required = true;
+
 
                   var meal3formchecklabel = document.createElement("label");
                   meal3formchecklabel.setAttribute("class", "form-check-label");
@@ -936,7 +939,8 @@
                   meal4formcheckinput.setAttribute("name", "guest" + i + "mealSelection")
                   meal4formcheckinput.setAttribute("id", "guest" + i + "Portobellooption");
                   meal4formcheckinput.setAttribute("value", "Grilled Portobello Napoleon");
-              
+                  meal4formcheckinput.required = true;
+
 
                   var meal4formchecklabel = document.createElement("label");
                   meal4formchecklabel.setAttribute("class", "form-check-label");
@@ -952,7 +956,8 @@
                   meal5formcheckinput.setAttribute("name", "guest" + i + "mealSelection")
                   meal5formcheckinput.setAttribute("id", "guest" + i + "kidsoption");
                   meal5formcheckinput.setAttribute("value", "Kid Meal (Chicken Tenders & Fries)");
-                  
+                  meal5formcheckinput.required = true;
+
 
                   var meal5formchecklabel = document.createElement("label");
                   meal5formchecklabel.setAttribute("class", "form-check-label");
@@ -1063,7 +1068,7 @@
 
       ))
 
-      .catch(error => {showModal("Error", "<div class='alert alert-danger'>Error Occured</div>");})
+      .catch(error => { showModal("Error", "<div class='alert alert-danger'>Error Occured</div>"); })
   })
 
 
@@ -1099,7 +1104,7 @@
           showModal("Info", "<div class='alert alert-primary'>It Looks like you've already RSVP'd. If you plan on attending, you should of received an email. Check spam folder.</div>");
 
         }
-        else if (data.result == 'Invitation Not Found'){
+        else if (data.result == 'Invitation Not Found') {
           document.getElementById('RSVP_Main_Section').style.display = 'none';
           document.getElementById('RSVP_FindMyInvitations_Section').style.display = 'block';
           document.getElementById('RSVP_PlusOnes_Section').innerHTML = '';
