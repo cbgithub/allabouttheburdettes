@@ -391,7 +391,7 @@
 
             <div class="container">
 
-              <!--
+
               <div id="RSVP">
 
                 <div id="loader" style="text-align: center; display: none;">
@@ -546,35 +546,34 @@
                   </div>
                 </div>
                 <!-- Modal -->
-              <div class="modal" id="myModal">
-                <div class="modal-dialog">
-                  <div class="modal-content">
+                <div class="modal" id="myModal">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
 
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                      <h4 class="modal-title" id="modal-title"></h4>
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title" id="modal-title"></h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+
+                      <!-- Modal body -->
+                      <div class="modal-body" id="modal-body">
+
+                      </div>
+
+                      <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                      </div>
+
                     </div>
-
-                    <!-- Modal body -->
-                    <div class="modal-body" id="modal-body">
-
-                    </div>
-
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                    </div>
-
                   </div>
                 </div>
               </div>
+
+
             </div>
-           
-
-
-          </div>
-          <!--
+            <!--
  
 
 <div id="RSVP">
@@ -601,65 +600,66 @@
       </div>
     </div>
   </div>
-</div>-->
+</div>
+     -->
 
 
-          <br>
-          <br>
-          <br>
-
-          <div id="Gifts" style="background-color: black; color:white;">
             <br>
-            <h2 style=" text-align: center; font-family: brandon-grotesque,'Brandon Grotesque',Futura,sans-serif; ">
-              GIFTS</h2>
-
-            <span style="color: white;" class="underline"></span>
             <br>
-            <div class="container">
-              <p style="text-align:center; padding-left: 80px; padding-right:80px;">If you were thinking of giving a
-                gift to help us on our way a gift of cash towards our honeymoon, would really make our day!
-                If however it's a gift you find, please be assured we will not mind!</p>
+            <br>
+
+            <div id="Gifts" style="background-color: black; color:white;">
               <br>
-              <div class="row">
+              <h2 style=" text-align: center; font-family: brandon-grotesque,'Brandon Grotesque',Futura,sans-serif; ">
+                GIFTS</h2>
+
+              <span style="color: white;" class="underline"></span>
+              <br>
+              <div class="container">
+                <p style="text-align:center; padding-left: 80px; padding-right:80px;">If you were thinking of giving a
+                  gift to help us on our way a gift of cash towards our honeymoon, would really make our day!
+                  If however it's a gift you find, please be assured we will not mind!</p>
+                <br>
+                <div class="row">
 
 
-                <div class="col-md-6" style="text-align: center; padding-bottom: 15px;">
-                  <a href="">
-                    <img width="40%" height="72%" src="images/zellelogo.png">
-                    <p>courtneyrowley@hotmail.com</p>
-                  </a>
+                  <div class="col-md-6" style="text-align: center; padding-bottom: 15px;">
+                    <a href="">
+                      <img width="40%" height="72%" src="images/zellelogo.png">
+                      <p>courtneyrowley@hotmail.com</p>
+                    </a>
 
-                </div>
-                <div class="col-md-6" style="text-align: center;">
-                  <a href="">
-                    <img width="20%" src="images/cashapplogo.svg">
-                    <p>$djsubdue</p>
-                  </a>
+                  </div>
+                  <div class="col-md-6" style="text-align: center;">
+                    <a href="">
+                      <img width="20%" src="images/cashapplogo.svg">
+                      <p>$djsubdue</p>
+                    </a>
 
-                </div>
-                <!--<div class="col-md-4" style="text-align: center; padding-bottom: 30px;">
+                  </div>
+                  <!--<div class="col-md-4" style="text-align: center; padding-bottom: 30px;">
                     <a href="">
                       <img width="20%" src="images/amazonlogo.webp">
                     </a>
                     <p>(Coming Soon)</p>
                   </div>-->
 
+                </div>
               </div>
+
+              <br>
+              <br>
             </div>
 
-            <br>
-            <br>
+
+
           </div>
-
-
 
         </div>
 
       </div>
 
     </div>
-
-  </div>
 
   </div>
 
@@ -675,7 +675,7 @@
 
   var username = "";
 
-/*
+
   var notattending = document.getElementById("attendnooption");
   var isattending = document.getElementById("attendyesoption");
 
@@ -695,7 +695,38 @@
       $('#salmonoption').removeAttr('required');
       $('#crabcakeoption').removeAttr('required');
       $('#portobellooption').removeAttr('required');
-
+      /*
+            $('#guest1chickenoption').removeAttr('required');
+            $('#guest1salmonoption').removeAttr('required');;
+            $('#guest1crabcakeoption').removeAttr('required');
+            $('#guest1Portobellooption').removeAttr('required');
+            $('#guest1kidsoption').removeAttr('required');
+      
+      
+            $('#guest2salmonoption').removeAttr('required');
+            $('#guest2crabcakeoption').removeAttr('required');
+            $('#guest2Portobellooption').removeAttr('required');
+            $('#guest2chickenoption').removeAttr('required');
+            $('#guest2kidsoption').removeAttr('required');
+      
+            $('#guest3chickenoption').removeAttr('required');
+            $('#guest3salmonoption').removeAttr('required');
+            $('#guest3crabcakeoption').removeAttr('required');
+            $('#guest3Portobellooption').removeAttr('required');
+            $('#guest3kidsoption').removeAttr('required');
+      
+            $('#guest4chickenoption').removeAttr('required');
+            $('#guest4salmonoption').removeAttr('required');
+            $('#guest4crabcakeoption').removeAttr('required');
+            $('#guest4portobellooption').removeAttr('required');
+            $('#guest4kidsoption').removeAttr('required');
+      
+            $('#guest5chickenoption').removeAttr('required');
+            $('#guest5salmonoption').removeAttr('required');
+            $('#guest5crabcakeoption').removeAttr('required');
+            $('#guest5Portobellooption').removeAttr('required');
+            $('#guest5kidsoption').removeAttr('required');
+            */
     }
   });
 
@@ -714,7 +745,39 @@
       $('#salmonoption').prop("required", true);
       $('#crabcakeoption').prop("required", true);
       $('#portobellooption').prop("required", true);
+      /*
+      $('#guest1chickenoption').prop("required", true);
 
+      $('#guest1salmonoption').prop("required", true);
+      $('#guest1crabcakeoption').prop("required", true);
+      $('#guest1Portobellooption').prop("required", true);
+      $('#guest1kidsoption').prop("required", true);
+
+
+      $('#guest2salmonoption').prop("required", true);
+      $('#guest2crabcakeoption').prop("required", true);
+      $('#guest2Portobellooption').prop("required", true);
+      $('#guest2chickenoption').prop("required", true);
+      $('#guest2kidsoption').prop("required", true);
+
+      $('#guest3chickenoption').prop("required", true);
+      $('#guest3salmonoption').prop("required", true);
+      $('#guest3crabcakeoption').prop("required", true);
+      $('#guest3Portobellooption').prop("required",true);
+      $('#guest3kidsoption').prop("required", true);
+
+      $('#guest4chickenoption').prop("required", true);
+      $('#guest4salmonoption').prop("required", true);
+      $('#guest4crabcakeoption').prop("required", true);
+      $('#guest4portobellooption').prop("required", true);
+      $('#guest4kidsoption').prop("required", true);
+
+      $('#guest5chickenoption').prop("required", true);
+      $('#guest5salmonoption').prop("required", true);
+      $('#guest5crabcakeoption').prop("required", true);
+      $('#guest5Portobellooption').prop("required", true);
+      $('#guest5kidsoption').prop("required", true);
+      */
     }
   });
 
@@ -825,7 +888,7 @@
                   meal1formcheckinput.setAttribute("name", "guest" + i + "mealSelection")
                   meal1formcheckinput.setAttribute("id", "guest" + i + "chickenoption");
                   meal1formcheckinput.setAttribute("value", "Lemon Chicken");
-
+                 
 
                   var meal1formchecklabel = document.createElement("label");
                   meal1formchecklabel.setAttribute("class", "form-check-label");
@@ -841,7 +904,7 @@
                   meal2formcheckinput.setAttribute("name", "guest" + i + "mealSelection")
                   meal2formcheckinput.setAttribute("id", "guest" + i + "salmonoption");
                   meal2formcheckinput.setAttribute("value", "Atlantic Salmon");
-
+                 
 
                   var meal2formchecklabel = document.createElement("label");
                   meal2formchecklabel.setAttribute("class", "form-check-label");
@@ -857,7 +920,7 @@
                   meal3formcheckinput.setAttribute("name", "guest" + i + "mealSelection")
                   meal3formcheckinput.setAttribute("id", "guest" + i + "crabcakeoption");
                   meal3formcheckinput.setAttribute("value", "Maryland Crab Cake");
-
+               
 
                   var meal3formchecklabel = document.createElement("label");
                   meal3formchecklabel.setAttribute("class", "form-check-label");
@@ -873,7 +936,7 @@
                   meal4formcheckinput.setAttribute("name", "guest" + i + "mealSelection")
                   meal4formcheckinput.setAttribute("id", "guest" + i + "Portobellooption");
                   meal4formcheckinput.setAttribute("value", "Grilled Portobello Napoleon");
-
+              
 
                   var meal4formchecklabel = document.createElement("label");
                   meal4formchecklabel.setAttribute("class", "form-check-label");
@@ -889,7 +952,7 @@
                   meal5formcheckinput.setAttribute("name", "guest" + i + "mealSelection")
                   meal5formcheckinput.setAttribute("id", "guest" + i + "kidsoption");
                   meal5formcheckinput.setAttribute("value", "Kid Meal (Chicken Tenders & Fries)");
-
+                  
 
                   var meal5formchecklabel = document.createElement("label");
                   meal5formchecklabel.setAttribute("class", "form-check-label");
@@ -1000,7 +1063,7 @@
 
       ))
 
-      .catch(error => { showModal("Error", "<div class='alert alert-danger'>Error Occured</div>"); })
+      .catch(error => {showModal("Error", "<div class='alert alert-danger'>Error Occured</div>");})
   })
 
 
@@ -1036,7 +1099,7 @@
           showModal("Info", "<div class='alert alert-primary'>It Looks like you've already RSVP'd. If you plan on attending, you should of received an email. Check spam folder.</div>");
 
         }
-        else if (data.result == 'Invitation Not Found') {
+        else if (data.result == 'Invitation Not Found'){
           document.getElementById('RSVP_Main_Section').style.display = 'none';
           document.getElementById('RSVP_FindMyInvitations_Section').style.display = 'block';
           document.getElementById('RSVP_PlusOnes_Section').innerHTML = '';
@@ -1077,7 +1140,7 @@
 
       })
   })
-**/
+
   function clearAlert() {
     document.getElementById("invitee").value = username;
   }

@@ -315,6 +315,14 @@ transform: translateX(0);
   width:45vw;
   height:450px;
 
+
+}
+
+[data-input][type="number"]::-webkit-inner-spin-button, 
+[data-input][type="number"]::-webkit-outer-spin-button {  
+   -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
 }
 #two { 
  
@@ -332,4 +340,20 @@ transform: translateX(0);
     border:0;
 
   }
+
+
+
+#loader {
+  position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      
+}
+
+#loader .indicator {
+  font-size: 60px;
+  }
+
+
 }
