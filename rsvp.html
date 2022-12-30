@@ -862,6 +862,12 @@
                 document.getElementById('RSVP_PlusOnes_Section').innerHTML = '';
               }
 
+              if(count > guestcount){
+                document.getElementById("additionalguestcount").value = "";
+                showModal("Max Guest Reached", "<div class='alert alert-danger'>You are only allowed to add up to " + guestcount + " </div>");
+
+              }
+
               if (count <= guestcount) {
                 document.getElementById('RSVP_PlusOnes_Section').innerHTML = '';
                 for (i = 1; i <= count; i++) {
