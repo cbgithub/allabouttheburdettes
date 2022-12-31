@@ -52,7 +52,7 @@
           <a class="nav-link" href="#Gifts" style="color: white">Gifts</a>
         </li>
         <li class="nav-item" style="border: 2px;">
-          <a class="nav-link" style="color: white;  border: 2px solid white;">RSVP - COMING SOON</a>
+          <a class="nav-link" href="#RSVP" style="color: white;  border: 2px solid white;">RSVP</a>
         </li>
       </ul>
     </div>
@@ -67,8 +67,8 @@
           <div class="container">
             <h1 class="display-4" style="font-family: freight-display-pro, freight,serif;">Join us as we begin our
               journey together.</h1>
-            <button type="button" style="color:white; border-color:white;" class="btn btn-outline-warning btn-lg">RSVP -
-              COMING SOON</button>
+            <button type="button" onclick="location.href='#RSVP'" style="color:white; border-color:white;"
+              class="btn btn-outline-warning btn-lg">RSVP</button>
             <br>
             <br>
             <br>
@@ -389,14 +389,24 @@
             <br>
             <br>
 
-            <div class="container">
 
-              <!--
-              <div id="RSVP">
+
+
+            <div id="RSVP" style="
+              background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url('images/Engagement02.JPG');
+          
+              background-position: center center; 
+    background-repeat: no-repeat;
+    background-color: black;
+    background-size: cover;
+            ">
+              <div class="container">
+
+
 
                 <div id="loader" style="text-align: center; display: none;">
-                  <i class="fa fa-heart  fa-center-align fa-spin indicator fa-7x"></i>
-                  <p>Loading...</p>
+                  <i class="fa fa-heart  fa-center-align fa-spin indicator fa-7x" style="color:red;"></i>
+                  <p style="color:white">Loading...</p>
                 </div>
 
 
@@ -406,8 +416,12 @@
                   <div class="container py-5">
 
                     <div class="row">
-                      <div class="col-lg-5 col-md-8 mx-auto shadow border bg-white p-4 rounded">
-                        <h2 class="text-center fw-bold mb-3">Find My Invitation</h2>
+                      <div class="col-lg-5 col-md-8 mx-auto shadow border p-4 rounded"
+                        style="background-color: hsla(40, 100%, 6%, 0.6); color:white;">
+                        <h2
+                          style="text-align: center; font-family: brandon-grotesque,'Brandon Grotesque',Futura,sans-serif; ">
+                          Find My Invitation</h2>
+                        <span class="underline"></span>
                         <form name="find-my-invitation" id="find-my-invitation">
                           <div id="invite_form_alerts"></div>
                           <div class="form-group mb-3">
@@ -434,8 +448,13 @@
                   <div class="container py-5">
 
                     <div class="row">
-                      <div class="col-lg-5 col-md-8 mx-auto shadow border bg-white p-4 rounded">
-                        <h2 class="text-center fw-bold mb-3">RSVP</h2>
+                      <div class="col-lg-5 col-md-8 mx-auto shadow border p-4 rounded"
+                        style="background-color: hsla(40, 100%, 6%, 0.6); color:white;">
+                        <h2
+                          style="text-align: center; font-family: brandon-grotesque,'Brandon Grotesque',Futura,sans-serif;  ">
+                          RSVP</h2>
+                        <span class="underline"></span>
+                        <br>
                         <form name="rsvp-sheet" id="rsvp-sheet">
                           <div id="form_alerts"></div>
                           <div class="form-group mb-3" style="display: none;">
@@ -468,9 +487,9 @@
                               <label for="radio" class="form-label"><b>I plan on eating..</b></label><br>
                               <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="invitee_meal_selection"
-                                  id="chickenoption" value="Lemon Chicken" required>
+                                  id="chickenoption" value="Meyer Lemon Chicken Piccata" required>
                                 <label class="form-check-label" for="chickenoption">
-                                  Lemon Chicken
+                                  Meyer Lemon Chicken Piccata
                                 </label>
                               </div>
                               <div class="form-check form-check-inline">
@@ -546,35 +565,38 @@
                   </div>
                 </div>
                 <!-- Modal -->
-              <div class="modal" id="myModal">
-                <div class="modal-dialog">
-                  <div class="modal-content">
+                <div class="modal" id="myModal">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
 
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                      <h4 class="modal-title" id="modal-title"></h4>
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title" id="modal-title"
+                          style="text-align: center; font-family: brandon-grotesque,'Brandon Grotesque',Futura,sans-serif; ">
+                        </h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+
+                      <!-- Modal body -->
+                      <div class="modal-body" id="modal-body"
+                        style="text-align: center; font-family: brandon-grotesque,'Brandon Grotesque',Futura,sans-serif; ">
+
+                      </div>
+
+                      <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                      </div>
+
                     </div>
-
-                    <!-- Modal body -->
-                    <div class="modal-body" id="modal-body">
-
-                    </div>
-
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                    </div>
-
                   </div>
                 </div>
               </div>
+
+
             </div>
-           
 
-
-          </div>
-          <!--
+            <!--
  
 
 <div id="RSVP">
@@ -601,65 +623,69 @@
       </div>
     </div>
   </div>
-</div>-->
+</div>
+     -->
 
 
-          <br>
-          <br>
-          <br>
-
-          <div id="Gifts" style="background-color: black; color:white;">
             <br>
-            <h2 style=" text-align: center; font-family: brandon-grotesque,'Brandon Grotesque',Futura,sans-serif; ">
-              GIFTS</h2>
-
-            <span style="color: white;" class="underline"></span>
             <br>
-            <div class="container">
-              <p style="text-align:center; padding-left: 80px; padding-right:80px;">If you were thinking of giving a
-                gift to help us on our way a gift of cash towards our honeymoon, would really make our day!
-                If however it's a gift you find, please be assured we will not mind!</p>
+            <br>
+
+            <div id="Gifts" style="background-color: black; color:white;">
               <br>
-              <div class="row">
+              <h2 style=" text-align: center; font-family: brandon-grotesque,'Brandon Grotesque',Futura,sans-serif; ">
+                GIFTS</h2>
+
+              <span style="color: white;" class="underline"></span>
+              <br>
+              <div class="container">
+                <p style="text-align:center; padding-left: 80px; padding-right:80px;">If you were thinking of giving a
+                  gift to help us on our way a gift of cash towards our honeymoon, would really make our day!
+                  If however it's a gift you find, please be assured we will not mind!</p>
+                <br>
+                <div class="row">
 
 
-                <div class="col-md-6" style="text-align: center; padding-bottom: 15px;">
-                  <a href="">
-                    <img width="40%" height="72%" src="images/zellelogo.png">
-                    <p>courtneyrowley@hotmail.com</p>
-                  </a>
-
-                </div>
-                <div class="col-md-6" style="text-align: center;">
-                  <a href="">
-                    <img width="20%" src="images/cashapplogo.svg">
-                    <p>$djsubdue</p>
-                  </a>
-
-                </div>
-                <!--<div class="col-md-4" style="text-align: center; padding-bottom: 30px;">
+                  <div class="col-md-4" style="text-align: center; padding-bottom: 15px;">
                     <a href="">
+                      <img width="30%" src="images/zellelogo.png">
+                      <p>courtneyrowley@hotmail.com</p>
+                    </a>
+
+                  </div>
+                  <div class="col-md-4" style="text-align: center;">
+                    <a href="">
+                      <img width="20%" src="images/cashapplogo.svg">
+                      <p>$djsubdue</p>
+                    </a>
+
+                  </div>
+                  <div class="col-md-4" style="text-align: center; padding-bottom: 30px;">
+                    <a
+                      href="https://www.amazon.com/wedding/courtney-rowley-christopher-burdette--april-2023/registry/1T9W1AGTRE6VU">
                       <img width="20%" src="images/amazonlogo.webp">
                     </a>
-                    <p>(Coming Soon)</p>
-                  </div>-->
+                    <p><a
+                        href="https://www.amazon.com/wedding/courtney-rowley-christopher-burdette--april-2023/registry/1T9W1AGTRE6VU">Registry</a>
+                    </p>
+                  </div>
 
+                </div>
               </div>
+
+              <br>
+              <br>
             </div>
 
-            <br>
-            <br>
+
+
           </div>
-
-
 
         </div>
 
       </div>
 
     </div>
-
-  </div>
 
   </div>
 
@@ -675,7 +701,7 @@
 
   var username = "";
 
-/*
+
   var notattending = document.getElementById("attendnooption");
   var isattending = document.getElementById("attendyesoption");
 
@@ -696,6 +722,37 @@
       $('#crabcakeoption').removeAttr('required');
       $('#portobellooption').removeAttr('required');
 
+      $('#guest1chickenoption').removeAttr('required');
+      $('#guest1salmonoption').removeAttr('required');;
+      $('#guest1crabcakeoption').removeAttr('required');
+      $('#guest1Portobellooption').removeAttr('required');
+      $('#guest1kidsoption').removeAttr('required');
+
+
+      $('#guest2salmonoption').removeAttr('required');
+      $('#guest2crabcakeoption').removeAttr('required');
+      $('#guest2Portobellooption').removeAttr('required');
+      $('#guest2chickenoption').removeAttr('required');
+      $('#guest2kidsoption').removeAttr('required');
+
+      $('#guest3chickenoption').removeAttr('required');
+      $('#guest3salmonoption').removeAttr('required');
+      $('#guest3crabcakeoption').removeAttr('required');
+      $('#guest3Portobellooption').removeAttr('required');
+      $('#guest3kidsoption').removeAttr('required');
+
+      $('#guest4chickenoption').removeAttr('required');
+      $('#guest4salmonoption').removeAttr('required');
+      $('#guest4crabcakeoption').removeAttr('required');
+      $('#guest4portobellooption').removeAttr('required');
+      $('#guest4kidsoption').removeAttr('required');
+
+      $('#guest5chickenoption').removeAttr('required');
+      $('#guest5salmonoption').removeAttr('required');
+      $('#guest5crabcakeoption').removeAttr('required');
+      $('#guest5Portobellooption').removeAttr('required');
+      $('#guest5kidsoption').removeAttr('required');
+
     }
   });
 
@@ -714,7 +771,39 @@
       $('#salmonoption').prop("required", true);
       $('#crabcakeoption').prop("required", true);
       $('#portobellooption').prop("required", true);
+      /*
+      $('#guest1chickenoption').prop("required", true);
 
+      $('#guest1salmonoption').prop("required", true);
+      $('#guest1crabcakeoption').prop("required", true);
+      $('#guest1Portobellooption').prop("required", true);
+      $('#guest1kidsoption').prop("required", true);
+
+
+      $('#guest2salmonoption').prop("required", true);
+      $('#guest2crabcakeoption').prop("required", true);
+      $('#guest2Portobellooption').prop("required", true);
+      $('#guest2chickenoption').prop("required", true);
+      $('#guest2kidsoption').prop("required", true);
+
+      $('#guest3chickenoption').prop("required", true);
+      $('#guest3salmonoption').prop("required", true);
+      $('#guest3crabcakeoption').prop("required", true);
+      $('#guest3Portobellooption').prop("required",true);
+      $('#guest3kidsoption').prop("required", true);
+
+      $('#guest4chickenoption').prop("required", true);
+      $('#guest4salmonoption').prop("required", true);
+      $('#guest4crabcakeoption').prop("required", true);
+      $('#guest4portobellooption').prop("required", true);
+      $('#guest4kidsoption').prop("required", true);
+
+      $('#guest5chickenoption').prop("required", true);
+      $('#guest5salmonoption').prop("required", true);
+      $('#guest5crabcakeoption').prop("required", true);
+      $('#guest5Portobellooption').prop("required", true);
+      $('#guest5kidsoption').prop("required", true);
+      */
     }
   });
 
@@ -782,6 +871,12 @@
                 document.getElementById('RSVP_PlusOnes_Section').innerHTML = '';
               }
 
+              if (count > guestcount) {
+                document.getElementById("additionalguestcount").value = "";
+                showModal("Max Guest Reached", "<div class='alert alert-danger'>You are only allowed to add up to " + guestcount + " </div>");
+
+              }
+
               if (count <= guestcount) {
                 document.getElementById('RSVP_PlusOnes_Section').innerHTML = '';
                 for (i = 1; i <= count; i++) {
@@ -801,6 +896,7 @@
                   input.setAttribute("name", "guest" + i + "name");
                   input.setAttribute("class", "form-control");
                   input.setAttribute("placeholder", "Enter first and Last name..");
+                  input.required = true;
 
 
 
@@ -824,13 +920,14 @@
                   meal1formcheckinput.setAttribute("type", "radio");
                   meal1formcheckinput.setAttribute("name", "guest" + i + "mealSelection")
                   meal1formcheckinput.setAttribute("id", "guest" + i + "chickenoption");
-                  meal1formcheckinput.setAttribute("value", "Lemon Chicken");
+                  meal1formcheckinput.setAttribute("value", "Meyer Lemon Chicken Piccata");
+                  meal1formcheckinput.required = true;
 
 
                   var meal1formchecklabel = document.createElement("label");
                   meal1formchecklabel.setAttribute("class", "form-check-label");
                   meal1formchecklabel.setAttribute("for", "guest" + i + "chickenoption");
-                  meal1formchecklabel.innerHTML = "Lemon Chicken";
+                  meal1formchecklabel.innerHTML = "Meyer Lemon Chicken Piccata";
 
                   var meal2formcheck = document.createElement('div');
                   meal2formcheck.setAttribute("class", "form-check form-check-inline");
@@ -841,7 +938,7 @@
                   meal2formcheckinput.setAttribute("name", "guest" + i + "mealSelection")
                   meal2formcheckinput.setAttribute("id", "guest" + i + "salmonoption");
                   meal2formcheckinput.setAttribute("value", "Pan Seared Atlantic Salmon");
-
+                  meal2formcheckinput.required = true;
 
                   var meal2formchecklabel = document.createElement("label");
                   meal2formchecklabel.setAttribute("class", "form-check-label");
@@ -857,6 +954,7 @@
                   meal3formcheckinput.setAttribute("name", "guest" + i + "mealSelection")
                   meal3formcheckinput.setAttribute("id", "guest" + i + "crabcakeoption");
                   meal3formcheckinput.setAttribute("value", "Maryland Crab Cake");
+                  meal3formcheckinput.required = true;
 
 
                   var meal3formchecklabel = document.createElement("label");
@@ -873,6 +971,7 @@
                   meal4formcheckinput.setAttribute("name", "guest" + i + "mealSelection")
                   meal4formcheckinput.setAttribute("id", "guest" + i + "Portobellooption");
                   meal4formcheckinput.setAttribute("value", "Grilled Portobello Napoleon");
+                  meal4formcheckinput.required = true;
 
 
                   var meal4formchecklabel = document.createElement("label");
@@ -889,6 +988,7 @@
                   meal5formcheckinput.setAttribute("name", "guest" + i + "mealSelection")
                   meal5formcheckinput.setAttribute("id", "guest" + i + "kidsoption");
                   meal5formcheckinput.setAttribute("value", "Kid Meal (Chicken Tenders & Fries)");
+                  meal5formcheckinput.required = true;
 
 
                   var meal5formchecklabel = document.createElement("label");
@@ -1000,7 +1100,11 @@
 
       ))
 
-      .catch(error => { showModal("Error", "<div class='alert alert-danger'>Error Occured</div>"); })
+      .catch(error => {
+        document.getElementById('RSVP_FindMyInvitations_Section').style.display = 'block';
+        document.getElementById('loader').style.display = 'none';
+        showModal("Error", "<div class='alert alert-danger'>Error occurred, please try again.</div>");
+      })
   })
 
 
@@ -1077,7 +1181,7 @@
 
       })
   })
-**/
+
   function clearAlert() {
     document.getElementById("invitee").value = username;
   }
