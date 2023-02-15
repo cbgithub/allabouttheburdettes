@@ -565,7 +565,7 @@
 
                           <div>
                             <button class="btn btn-primary me-2" type="submit">Send</button>
-                            <button class="btn btn-danger" onclick="clearAlert()" type="reset">Reset the form</button>
+                          
                           </div>
                         </form>
                       </div>
@@ -817,6 +817,9 @@
   });
 
 
+
+
+
   const scriptInviteListUrl = 'https://script.google.com/macros/s/AKfycbyvFIvnDtPWZOnb-ho1JoSYstuUNr7KjN-Ff7QuemDDuCk8omCm_iSz7ADADhicl7mC/exec'
 
   const inviteform = document.forms['find-my-invitation']
@@ -854,7 +857,7 @@
             var additionalguestlabel = document.createElement('label');
             additionalguestlabel.setAttribute("for", "additionalguests");
             additionalguestlabel.setAttribute("class", "form-label");
-            additionalguestlabel.innerHTML = "<b>Enter the number of additional guests" + " (Max " + guestcount + " )</b>";
+            additionalguestlabel.innerHTML = "<b style='color:red'>Enter the number of additional guests in the box below " + " (Max " + guestcount + " )</b>";
             var additionalguestinput = document.createElement('input');
             additionalguestinput.setAttribute("type", "number");
             additionalguestinput.setAttribute("id", "additionalguestcount");
@@ -1241,6 +1244,17 @@
   });
 
 
+  function goBackToSearch(){
+    location.reload()
+if(document.getElementById('RSVP_FindMyInvitations_Section')){
+  document.getElementById('RSVP_FindMyInvitations_Section').style.display = 'none';
+}
+
+if(document.getElementById('RSVP_Main_Section')){
+  document.getElementById('RSVP_Main_Section').style.display = 'block';
+}
+
+}
  
 
 </script>
